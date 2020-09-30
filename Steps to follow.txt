@@ -1,0 +1,32 @@
+1. Go to VSCode/ Git bash terminal
+2. Clone the repo through ssh/https
+cmd - git clone https://github.com/KPC6796/Branching_practice.git
+3. By default you will be at master branch
+cmd - git branch
+4. Create a new branch 
+cmd - git branch slave
+5. Switch to the newly created branch
+cmd - git checkout slave
+git branch (to check the available branches and active branch is identified by green color and a star (*) mark)
+6. Make changes in the code.
+7. Add the changes made
+cmd - git add branch.py
+8. Check what files have changed and are in the staging area.
+cmd - git status
+9. Commit changes with a message
+cmd - git commit -m 'Added Salary feature'
+10. git checkout master 
+will not show the changes (Salary feature addition won't reflect)
+11. git log
+will not show the commit message because it was done in slave branch
+12. git merge slave (merge slave branch into master branch)
+Merge only after switching to master branch
+13. git log
+will show the log of merge branch 'slave'
+14. git pull
+15. git push
+16. git checkout slave
+17. git push --set-upstream origin slave (Push slave to my github).
+18. git checkout -b dummy (checkout to a branch named dummy)
+19. git checkout master
+20. git branch -d dummy 
